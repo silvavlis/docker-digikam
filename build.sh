@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build --tag silvano/digikam .
+docker build --tag silvavlis/digikam .
