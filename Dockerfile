@@ -7,7 +7,7 @@ RUN apt-get update && \
 RUN add-apt-repository ppa:philip5/extra && \
     apt-get update && \
     apt-get install -y \
-	digikam
+	digikam=4:4.8.0-trusty~ppa1
 
 ENV HOME /home/user-dk
 RUN useradd --create-home --home-dir $HOME user-dk && \
