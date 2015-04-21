@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build --tag silvavlis/digikam:4.8 .
-docker tag silvavlis/digikam:4.8 silvavlis/digikam:latest
+docker build --tag silvavlis/digikam:4.9 .
+docker tag -f silvavlis/digikam:4.9 silvavlis/digikam:latest
