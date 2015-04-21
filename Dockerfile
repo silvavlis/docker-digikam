@@ -17,6 +17,9 @@ RUN echo "QT_X11_NO_MITSHM=1" >> /etc/environment
 
 USER user-dk
 
+RUN mkdir -p $HOME/.kde/share/config
+VOLUME $HOME/.kde/share/config
+
 ENV QT_X11_NO_MITSHM=1
 
 ENTRYPOINT ["/usr/bin/digikam"]
