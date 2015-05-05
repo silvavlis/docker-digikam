@@ -21,8 +21,8 @@ RUN echo "QT_X11_NO_MITSHM=1" >> /etc/environment
 
 USER user-dk
 
-RUN mkdir -p $HOME/.kde/share/config
-VOLUME $HOME/.kde/share/config
+RUN mkdir -p $HOME/.kde/share
+VOLUME $HOME/.kde/share
 
 ENV QT_X11_NO_MITSHM=1
 
