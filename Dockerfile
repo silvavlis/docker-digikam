@@ -1,4 +1,5 @@
 FROM ubuntu:trusty
+MAINTAINER Silvano Cirujano Cuesta <silvanociru@gmx.net>
 
 RUN apt-get update && \
     apt-get install -y \
