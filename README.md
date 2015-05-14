@@ -1,6 +1,6 @@
 # Digikam Dockerfile
 
-Docker image with the latest Digikam version (4.9 at the time of this writing) containerized.
+Docker image with the latest Digikam version (4.10 at the time of this writing) containerized.
 
 ## Base Docker image
 
