@@ -2,6 +2,8 @@
 
 Docker image with the latest Digikam version (4.10 at the time of this writing) containerized.
 
+This container is not conceived for productive usage, but more for testing the latest Digikam version.
+
 ## Base Docker image
 
 [Ubuntu Trusty](https://registry.hub.docker.com/_/ubuntu/)
@@ -15,10 +17,6 @@ Docker image with the latest Digikam version (4.10 at the time of this writing) 
 ### start an already existing Digikam container
 
 `docker start digikam`
-
-## Provided scripts
- * build.sh: to create and tag the image
- * run.sh: to start a container based on the created image
 
 ## Others
 
