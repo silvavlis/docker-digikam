@@ -1,6 +1,6 @@
 # Digikam Dockerfile
 
-Docker image with the latest Digikam version (4.11 at the time of this writing) containerized.
+Docker image with the latest Digikam version (4.12 at the time of this writing) containerized.
 
 This container is not conceived for productive usage, but more for testing the latest Digikam version.
 
