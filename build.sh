@@ -5,9 +5,5 @@ docker pull \
     ubuntu:trusty
 # build image
 docker build \
-    --tag silvavlis/digikam:4.12 \
+    --tag silvavlis/digikam:plugins \
     .
-# create 'latest' tag for image
-docker tag \
-    -f silvavlis/digikam:4.12 \
-    silvavlis/digikam:latest

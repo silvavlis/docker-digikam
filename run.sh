@@ -1,7 +1,7 @@
 #!/bin/bash
 
-IMAGE_NAME="silvavlis/digikam"
-CONT_NAME="digikam"
+IMAGE_NAME="silvavlis/digikam:plugins"
+CONT_NAME="digikam-plugins"
 USER="user-dk"
 
 if [ -z `docker ps --all=true --quiet --filter=name=${CONT_NAME}` ] ; then
