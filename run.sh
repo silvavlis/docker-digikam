@@ -11,6 +11,7 @@ if [ -z `docker ps --all=true --quiet --filter=name=${CONT_NAME}` ] ; then
         --user ${USER} \
         --name ${CONT_NAME} \
         -v ${HOME}/digikam-docker/Pictures:/home/${USER}/Pictures \
+        -v ${HOME}/digikam-docker/kde-data:/home/${USER}/.kde/share \
         -v /tmp/.X11-unix:/tmp/.X11-unix \
         -e DISPLAY=$DISPLAY \
         ${IMAGE_NAME}
