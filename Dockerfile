@@ -3,7 +3,9 @@ MAINTAINER Silvano Cirujano Cuesta <silvanociru@gmx.net>
 
 RUN apt-get update && \
     apt-get install -y \
-       software-properties-common && \
+	--no-install-recommends \
+        software-properties-common \
+        kde-runtime && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
@@ -11,7 +13,6 @@ RUN add-apt-repository ppa:philip5/extra && \
     apt-get update && \
     apt-get install -y \
 	--no-install-recommends \
-	kipi-plugins \
 	digikam=4:4.12.0-trusty~ppa1 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
