@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:vivid
 MAINTAINER Silvano Cirujano Cuesta <silvanociru@gmx.net>
 
 RUN apt-get update && \

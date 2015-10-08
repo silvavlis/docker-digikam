@@ -2,7 +2,7 @@
 
 # update base image
 docker pull \
-    ubuntu:trusty
+    ubuntu:vivid
 # build image
 docker build \
     --tag silvavlis/digikam:4.12 \
