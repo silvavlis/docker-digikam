@@ -13,7 +13,7 @@ RUN add-apt-repository ppa:philip5/extra && \
     apt-get update && \
     apt-get install -y \
 	--no-install-recommends \
-	digikam=4:4.12.0-trusty~ppa1 && \
+	digikam=4:4.13.0-vivid~ppa1 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
