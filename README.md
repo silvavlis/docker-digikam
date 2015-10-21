@@ -1,7 +1,7 @@
 # Digikam Dockerfile
 [![](https://badge.imagelayers.io/silvavlis/digikam:latest.svg)](https://imagelayers.io/?images=silvavlis/digikam:latest 'Get your own badge on imagelayers.io')
 
-Docker image with the latest Digikam version (4.13 at the time of this writing) containerized.
+Docker image with the latest Digikam version (4.14 at the time of this writing) containerized.
 
 This container is not conceived for productive usage, but more for testing the latest Digikam version.
 
