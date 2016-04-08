@@ -1,11 +1,11 @@
-FROM ubuntu:vivid
+FROM silvavlis/kde-runtime
 MAINTAINER Silvano Cirujano Cuesta <silvanociru@gmx.net>
 
 RUN apt-get update && \
     apt-get install -y \
 	--no-install-recommends \
         software-properties-common \
-        kde-runtime && \
+        && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
@@ -13,7 +13,8 @@ RUN add-apt-repository ppa:philip5/extra && \
     apt-get update && \
     apt-get install -y \
 	--no-install-recommends \
-	digikam=4:4.14.0-vivid~ppa1 && \
+	digikam=4:4.14.0-wily~ppa3 \
+        && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
@@ -31,3 +32,4 @@ VOLUME $HOME/.kde/share
 ENV QT_X11_NO_MITSHM=1
 
 ENTRYPOINT ["/usr/bin/digikam"]
+
